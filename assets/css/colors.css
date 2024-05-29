@@ -1,0 +1,12 @@
+:root {
+  --main-title-color: #3e5444;
+}
+
+/* Text Colors */
+body {
+  color: #333;
+}
+h1,
+h2 {
+  color: var(--main-title-color);
+}
