@@ -1,0 +1,21 @@
+/* Title Styles */
+h1 {
+  font-size: 48px;
+  font-family: "Lexend", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Lexend", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Lexend Giga", sans-serif;
+}
+
+/* Helper */
+.bold {
+  font-weight: bold;
+}
