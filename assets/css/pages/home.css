@@ -79,7 +79,7 @@
   max-width: 1200px;
   margin: auto;
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .bundle {
@@ -97,16 +97,30 @@
 }
 
 .bundle button {
-    border: none;
-    background-color: #B6DFE5;
-    padding: 10px 15px;
-    font-size: 25px;
-    border-radius: 30px;
-    color: white;
-    font-family: "Lexend", sans-serif;
-    text-transform: capitalize;
+  border: none;
+  background-color: #b6dfe5;
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 30px;
+  color: white;
+  font-family: "Lexend", sans-serif;
+  text-transform: capitalize;
 }
-    
 
+.spotlight-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
+
+.spotlight-container img {
+  width: 500px;
+  height: 500px;
+}
+
+.spotlight-container p {
+  margin-bottom: 20px;
 }
