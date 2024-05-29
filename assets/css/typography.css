@@ -20,6 +20,12 @@ p {
   font-size: 32px;
   font-family: "Lexend", sans-serif;
 }
+a {
+  font-size: 20px;
+  font-family: "Lexend Giga", sans-serif;
+  text-transform: capitalize;
+  margin: 0px 10px;
+}
 
 /* Helper */
 .bold {
