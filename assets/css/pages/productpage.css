@@ -43,13 +43,36 @@
   text-transform: capitalize;
 }
 
+.cart {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cart img {
+  margin: 15px;
+  width: 50px;
+}
+
+.item-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .dog-items {
   margin: auto;
   margin-top: 40px;
-  display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .dog-item {
@@ -57,7 +80,7 @@
   flex-direction: column;
   align-items: center;
   width: 350px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .dog-item img {
@@ -77,9 +100,10 @@
 .dog-item button {
   border: none;
   background-color: #b6dfe5;
-  padding: 5px 5px;
-  font-size: 10px;
+  padding: 5px 15px;
+  font-size: 18px;
   border-radius: 30px;
+  margin-top: 5px;
   color: white;
   font-family: "Lexend", sans-serif;
   text-transform: capitalize;

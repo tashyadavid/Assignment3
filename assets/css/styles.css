@@ -136,4 +136,20 @@ table {
   padding: 10px 20px;
   font-size: 32px;
   font-family: "Lexend", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 1s;
+  transform: scale(0.97);
+}
+
+.cart-button {
+  border: none;
+  background-color: 99A49C4;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 32px;
+  font-family: "Lexend", sans-serif;
 }

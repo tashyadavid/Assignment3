@@ -1,0 +1,55 @@
+.footer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-image: url("../images/footer\ image.png");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  justify-content: space-between;
+  font-family: "Playfair Display SC", serif;
+  padding: 40px;
+}
+
+.footer .footer-top,
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer .footer-top .logo-section .logo {
+  width: 215px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.menu-section a,
+.menu-title {
+  font-family: "Playfair Display SC", serif;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+}
+
+.menu-section .menu-title {
+  text-decoration: underline;
+}
