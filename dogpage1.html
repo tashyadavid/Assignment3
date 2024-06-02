@@ -47,7 +47,7 @@
     <div class="item-container">
       <!-- bread crumb menu -->
       <div class="breadcrumb">
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
         <svg
           width="10"
           height="15"
@@ -61,7 +61,7 @@
             stroke-opacity="0.54"
           />
         </svg>
-        <a href="/productpage.html">Dog</a>
+        <a href="productpage.html">Dog</a>
         <svg
           width="10"
           height="15"
@@ -170,24 +170,14 @@
 </html>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const details = document.getElementById("details");
-    const items = details.getElementsByClassName("item");
+  const viewButton = document.getElementById("view");
+  const cartButton = document.getElementById("add");
 
-    for (let i = 0; i < items.length; i++) {
-      const title = items[i].getElementsByClassName("title")[0];
-      const description = items[i].getElementsByClassName("description")[0];
+  viewButton.addEventListener("click", () => {
+    window.location = "dogpage1.html";
+  });
 
-      title.addEventListener("click", function () {
-        if (
-          description.style.display === "none" ||
-          description.style.display === ""
-        ) {
-          description.style.display = "block";
-        } else {
-          description.style.display = "none";
-        }
-      });
-    }
+  cartButton.addEventListener("click", () => {
+    window.location = "shoppingcart1.html";
   });
 </script>
