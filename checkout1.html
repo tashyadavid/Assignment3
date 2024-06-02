@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PetShopDirect</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <link rel="stylesheet" href="assets/css/typography.css" />
-        <link rel="stylesheet" href="assets/css/colors.css" />
-        <link rel="stylesheet" href="assets/css/pages/checkout.css" />
-        <link rel="stylesheet" href="assets/css/footer.css" />
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-<body>
-     <!-- Logo -->
-     <div class="page-logo">
-        <img src="./assets/images/logo.png" alt="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShopDirect</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/pages/checkout.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="page-logo">
+      <img src="./assets/images/logo.png" alt="logo" />
     </div>
     <!-- shopping cart -->
     <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart">
+      <img src="./assets/images/cart.png" alt="cart" />
+    </div>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
@@ -41,100 +44,76 @@
         </div>
       </div>
     </div>
-    <!-- bread crumb menu -->
-    <div class="breadcrumb">
-        <a>Personal Details</a> 
-        <svg
-          width="10"
-          height="15"
-          viewBox="0 0 27 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 37L26 19L1 0.999999"
-            stroke="black"
-            stroke-opacity="0.54"
-          />
-        </svg>
-        <a>Payment Method</a> 
-        <svg
-          width="10"
-          height="15"
-          viewBox="0 0 27 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 37L26 19L1 0.999999"
-            stroke="black"
-            stroke-opacity="0.54"
-          />
-        </svg>
+    <div class="item-container">
+      <!-- bread crumb menu -->
+      <div class="breadcrumb">
+        <a>Personal Details</a>
+        <a>Payment Method</a>
         <a>Confirm Payment</a>
-    </div>
-    <!-- Checkout Personal details -->
-    <div class="personal-details">
+      </div>
+      <!-- Checkout Personal details -->
+      <div class="personal-details flex">
         <h1 class="bold">Enter your Details</h1>
-        <form action="/submit-form" method="post">
-            <label for="Email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            
-            <label for="first-name">First Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            
-            <label for="last-name">Last Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-    
-            <label for="phone-number">Phone Number:</label><br>
-            <input type="text" id="number" name="number"><br>
-    
-            <button class="primary-button">Continue to Payment Method</button>
+        <form action="/checkout2.html" method="get">
+          <label for="Email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="phone-number">Phone Number:</label><br />
+          <input type="text" id="number" name="number" /><br />
+          <label for="first-name">First Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+
+          <label for="last-name">Last Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+
+          <button class="primary-button">Continue to Payment Method</button>
         </form>
-        <p>back to home</p>
-    </div>  
-     <!-- footer -->
-     <div class="footer">
-        <div class="footer-top">
-          <div class="logo-section">
-            <img class="logo" src="./assets/images/logo.png" />
-            <div class="social-icons">
-              <img src="./assets/images/instagram logo.png" />
-              <img src="./assets/images/twitter.png" />
-              <img src="./assets/images/facebook.png" />
-            </div>
-          </div>
-          <div class="footer-menu">
-            <div class="menu-section">
-              <p class="menu-title">Our Company</p>
-              <a> About Us </a>
-              <a> FAQ </a>
-              <a> Career </a>
-            </div>
-            <div class="menu-section">
-              <p class="menu-title">Our Product</p>
-              <a> Refund Policies </a>
-              <a> Terms and Conditions </a>
-              <a> Customer Support </a>
-            </div>
-            <div class="menu-section">
-              <p class="menu-title">Our Policies</p>
-              <a> Refund Policies </a>
-              <a> Terms and Conditions </a>
-              <a> Customer Support </a>
-            </div>
+        <a href="/" class="continue">back to home</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="logo-section">
+          <img class="logo" src="./assets/images/logo.png" />
+          <div class="social-icons">
+            <img src="./assets/images/instagram logo.png" />
+            <img src="./assets/images/twitter.png" />
+            <img src="./assets/images/facebook.png" />
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>@ 2024, PetShopDirect. All rights reserved</p>
-          <div>
-            <img src="assets/images/American-Express-logo 1.png" alt="amex" />
-            <img src="assets/images/apple pay.png" alt="applepay" />
-            <img src="assets/images/MasterCard_Logo.png" alt="mastercard" />
-            <img src="assets/images/Paypal_logo.png" alt="paypal" />
-            <img src="assets/images/Google_Pay-Logo.png" alt="googlepay" />
+        <div class="footer-menu">
+          <div class="menu-section">
+            <p class="menu-title">Our Company</p>
+            <a> About Us </a>
+            <a> FAQ </a>
+            <a> Career </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Product</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Policies</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
           </div>
         </div>
       </div>
-</body>
+      <div class="footer-bottom">
+        <p>@ 2024, PetShopDirect. All rights reserved</p>
+        <div>
+          <img src="assets/images/American-Express-logo 1.png" alt="amex" />
+          <img src="assets/images/apple pay.png" alt="applepay" />
+          <img src="assets/images/MasterCard_Logo.png" alt="mastercard" />
+          <img src="assets/images/Paypal_logo.png" alt="paypal" />
+          <img src="assets/images/Google_Pay-Logo.png" alt="googlepay" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

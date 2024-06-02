@@ -49,8 +49,8 @@
           <p>$24.99</p>
         </div>
         <div class="flex btn-container">
-          <button class="cart-button">Continue Shopping</button>
-          <button class="primary-button">Checkout</button>
+          <button class="cart-button" id="continue">Continue Shopping</button>
+          <button class="primary-button" id="checkout">Checkout</button>
         </div>
       </div>
     </div>
@@ -99,3 +99,16 @@
     </div>
   </body>
 </html>
+
+<script>
+  const viewButton = document.getElementById("continue");
+  const checkoutButton = document.getElementById("checkout");
+
+  viewButton.addEventListener("click", () => {
+    window.location = "/";
+  });
+
+  checkoutButton.addEventListener("click", () => {
+    window.location = "/checkout1.html";
+  });
+</script>

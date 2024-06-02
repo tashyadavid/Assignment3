@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/typography.css" />
     <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
     <link rel="stylesheet" href="assets/css/pages/home.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +24,7 @@
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a>dog</a>
+          <a href="/productpage.html">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
@@ -37,13 +38,13 @@
     </div>
     <!-- categories -->
     <div class="categories">
-      <div class="category">
+      <div class="category" id="dog">
         <img src="./assets/images/dogs.png" alt="dog" />
         <p>Shop Dog</p>
       </div>
       <div class="category">
         <img src="./assets/images/cat.png" alt="cat" />
-        <p>ShopCat</p>
+        <p>Shop Cat</p>
       </div>
       <div class="category">
         <img src="./assets/images/small animals.png" alt="small animals" />
@@ -95,7 +96,7 @@
       </div>
     </div>
     <!-- featured -->
-    <div class="featured"></div>
+    <div class="featured" style="margin-top: 70px"></div>
     <!-- spotlight -->
     <div class="spotlight-container">
       <div class="spotlight">
@@ -157,3 +158,12 @@
     </div>
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dogButton = document.getElementById("dog");
+    dogButton.addEventListener("click", () => {
+      window.location = "/productpage.html";
+    });
+  });
+</script>

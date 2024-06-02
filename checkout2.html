@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/typography.css" />
     <link rel="stylesheet" href="assets/css/colors.css" />
-    <link rel="stylesheet" href="assets/css/pages/home.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/pages/checkout.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,67 +26,68 @@
     <!-- shopping cart -->
     <div class="cart">
       <img src="./assets/images/cart.png" alt="cart" />
-      <!-- menu -->
-      <div class="menu-container">
-        <div class="menu">
-          <div class="menu-list">
-            <a>dog</a>
-            <a>cat</a>
-            <a>fish</a>
-            <a>reptiles</a>
-            <a>help</a>
-          </div>
-          <div class="searchbar">
-            <input type="text" />
-            <button>search</button>
-          </div>
+    </div>
+    <!-- menu -->
+    <div class="menu-container">
+      <div class="menu">
+        <div class="menu-list">
+          <a>dog</a>
+          <a>cat</a>
+          <a>fish</a>
+          <a>reptiles</a>
+          <a>help</a>
+        </div>
+        <div class="searchbar">
+          <input type="text" />
+          <button>search</button>
         </div>
       </div>
+    </div>
+    <div class="item-container">
       <!-- bread crumb menu -->
       <div class="breadcrumb">
         <a href="/checkout1.html"></a>
         <a>Payment Method</a>
         <a>Confirm Payment</a>
       </div>
-    </div>
-    <!-- Checkout Payment method -->
-    <div class="payment-method">
-      <h1 class="bold">Payment Method</h1>
-      <form action="/submit-form" method="post">
-        <label for="Email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
+      <!-- Checkout Payment method -->
+      <div class="personal-details flex">
+        <h1 class="bold">Payment Method</h1>
+        <form action="/thankyoupage.html" method="get">
+          <label for="Email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
 
-        <label for="credit-card">Credit Card:</label><br />
-        <input type="integer" id="name" name="name" /><br />
+          <label for="credit-card">Credit Card:</label><br />
+          <input type="integer" id="name" name="name" /><br />
 
-        <label for="name-on-card">Name on Card:</label><br />
-        <input type="text" id="name" name="name" /><br />
+          <label for="name-on-card">Name on Card:</label><br />
+          <input type="text" id="name" name="name" /><br />
 
-        <label for="card-number">Card Number:</label><br />
-        <input type="integer" id="number" name="number" /><br />
+          <label for="card-number">Card Number:</label><br />
+          <input type="integer" id="number" name="number" /><br />
 
-        <label for="Date">MM/YY:</label><br />
-        <input type="text" id="number" name="number" /><br />
+          <label for="Date">MM/YY:</label><br />
+          <input type="text" id="number" name="number" /><br />
 
-        <label for="cvc">CVC:</label><br />
-        <input type="text" id="number" name="number" /><br />
-
-        <div class="other-payment-method">
-          <div class="apple-pay">
-            <img src="./assets/images/apple pay.png" alt="apple-pay" />
+          <label for="cvc">CVC:</label><br />
+          <input type="text" id="number" name="number" /><br />
+          <div class="flex pay">
+            <div class="apple-pay">
+              <img src="./assets/images/apple pay.png" alt="apple-pay" />
+            </div>
+            <div class="pay-pal">
+              <img src="./assets/images/Paypal_logo.png" alt="pay-pay" />
+            </div>
+            <div class="google-pay">
+              <img src="./assets/images/Google_Pay-Logo.png" alt="google-pay" />
+            </div>
           </div>
-          <div class="pay-pal">
-            <img src="./assets/images/Paypal_logo.png" alt="pay-pay" />
-          </div>
-          <div class="google-pay">
-            <img src="./assets/images/Google_Pay-Logo.png" alt="google-pay" />
-          </div>
-
           <button class="primary-button">Continue to Payment Method</button>
-        </div>
-      </form>
-      <p>back to details</p>
+        </form>
+        <a href="/checkout1.html" class="continue">back to details</a>
+      </div>
     </div>
+
     <!-- footer -->
     <div class="footer">
       <div class="footer-top">
