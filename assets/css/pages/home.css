@@ -105,6 +105,7 @@
   color: white;
   font-family: "Lexend", sans-serif;
   text-transform: capitalize;
+  margin-top: 150px;
 }
 
 .spotlight-container {
@@ -123,6 +124,7 @@
 
 .spotlight-container p {
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .featured {

@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PetShopDirect</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <link rel="stylesheet" href="assets/css/typography.css" />
-        <link rel="stylesheet" href="assets/css/colors.css" />
-        <link rel="stylesheet" href="assets/css/pages/home.css" />
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-<body>
-     <!-- Logo -->
-     <div class="page-logo">
-        <img src="./assets/images/logo.png" alt="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShopDirect</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/pages/detail.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="page-logo">
+      <img src="./assets/images/logo.png" alt="logo" />
     </div>
     <!-- shopping cart -->
     <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart">
+      <img src="./assets/images/cart.png" alt="cart" />
+    </div>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
@@ -40,68 +44,117 @@
         </div>
       </div>
     </div>
-    <!-- bread crumb menu -->
-    <div class="breadcrumb">
-        <a href="/">Home</a> 
-        <a href="/productpage.html">Dog</a> 
+    <div class="item-container">
+      <!-- bread crumb menu -->
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <a href="/productpage.html">Dog</a>
         <a>Black Hawk Chicken and Rice</a>
-    </div>
-    <!-- product -->
-    <div class="dog-item">
-        <img src="./assets/images/dog product 1.png" alt="dog"/>
-        <p>Black Hawk Chicken and Rice</p>
-        <p>$24.99</p>
-        <p>Select a size</p>
-        <button class="primary-button">Add to Cart</button>
-        <button class="primary-button">3kg</button>
-        <button class="primary-button">6kg</button>
-        <div class="review-stars">
-            <img src="./assets/images/review stars 1.png" alt="review">
+      </div>
+      <!-- product -->
+      <div class="detail-item">
+        <div class="detail-img">
+          <img src="./assets/images/dog product 1.png" alt="dog" />
+          <p>Black Hawk Chicken and Rice</p>
         </div>
-       <p>continue shopping</p>
-    </div>
-     <!-- footer -->
-     <div class="footer">
-        <div class="footer-top">
-          <div class="logo-section">
-            <img class="logo" src="./assets/images/logo.png" />
-            <div class="social-icons">
-              <img src="./assets/images/instagram logo.png" />
-              <img src="./assets/images/twitter.png" />
-              <img src="./assets/images/facebook.png" />
+        <div class="size-options">
+          <p class="description">Select a size</p>
+          <button class="primary-button">3kg</button>
+          <button class="primary-button">6kg</button>
+          <p class="bold price">$24.99</p>
+          <div class="details" id="details">
+            <div class="item">
+              <p class="title">Details</p>
+              <p class="description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+            </div>
+            <div class="item">
+              <p class="title">Reviews</p>
+              <p class="description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
             </div>
           </div>
-          <div class="footer-menu">
-            <div class="menu-section">
-              <p class="menu-title">Our Company</p>
-              <a> About Us </a>
-              <a> FAQ </a>
-              <a> Career </a>
-            </div>
-            <div class="menu-section">
-              <p class="menu-title">Our Product</p>
-              <a> Refund Policies </a>
-              <a> Terms and Conditions </a>
-              <a> Customer Support </a>
-            </div>
-            <div class="menu-section">
-              <p class="menu-title">Our Policies</p>
-              <a> Refund Policies </a>
-              <a> Terms and Conditions </a>
-              <a> Customer Support </a>
-            </div>
+          <div class="review-stars">
+            <img src="./assets/images/review stars 1.png" alt="review" />
+          </div>
+          <button class="primary-button">Add to Cart</button>
+        </div>
+      </div>
+      <p class="continue">continue shopping</p>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="logo-section">
+          <img class="logo" src="./assets/images/logo.png" />
+          <div class="social-icons">
+            <img src="./assets/images/instagram logo.png" />
+            <img src="./assets/images/twitter.png" />
+            <img src="./assets/images/facebook.png" />
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>@ 2024, PetShopDirect. All rights reserved</p>
-          <div>
+        <div class="footer-menu">
+          <div class="menu-section">
+            <p class="menu-title">Our Company</p>
+            <a> About Us </a>
+            <a> FAQ </a>
+            <a> Career </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Product</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Policies</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>@ 2024, PetShopDirect. All rights reserved</p>
+        <div>
           <img src="assets/images/American-Express-logo 1.png" alt="amex" />
           <img src="assets/images/apple pay.png" alt="paypal" />
           <img src="assets/images/MasterCard_Logo.png" alt="mastercard" />
           <img src="assets/images/Paypal_logo.png" alt="paypal" />
           <img src="assets/images/Google_Pay-Logo.png" alt="googlepay" />
-          </div>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const details = document.getElementById("details");
+    const items = details.getElementsByClassName("item");
+
+    for (let i = 0; i < items.length; i++) {
+      const title = items[i].getElementsByClassName("title")[0];
+      const description = items[i].getElementsByClassName("description")[0];
+
+      title.addEventListener("click", function () {
+        if (
+          description.style.display === "none" ||
+          description.style.display === ""
+        ) {
+          description.style.display = "block";
+        } else {
+          description.style.display = "none";
+        }
+      });
+    }
+  });
+</script>

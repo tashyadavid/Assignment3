@@ -51,7 +51,7 @@
         <a href="/">Home</a>
         <svg
           width="15"
-          height="30"
+          height="20"
           viewBox="0 0 27 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +62,7 @@
             stroke-opacity="0.54"
           />
         </svg>
+
         <a>Dog</a>
       </div>
       <!-- dog-items -->
@@ -70,50 +71,64 @@
           <img src="./assets/images/dog product 1.png" alt="dog" />
           <p>Black Hawk Chicken and Rice</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button" id="view">View</button>
+            <button class="primary-button" id="add">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images/dog product 2.png" alt="dog" />
           <p>Black Lamb Chicken and Rice</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images/dog product 2.png" alt="dog" />
           <p>Black Lamb Chicken and Rice</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images//dog product 3.png" alt="dog" />
           <p>Dog House</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images/dog product 4.png" alt="dog" />
           <p>Faux Grass</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images/dog product 5.png" alt="dog" />
           <p>Royal Canin</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
         <div class="dog-item">
           <img src="./assets/images/dog product 6.png" alt="dog" />
           <p>Mini Dog Food</p>
           <p>$24.99</p>
-          <button class="primary-button">View</button>
-          <button class="primary-button">Add to Cart</button>
+          <div class="button-container">
+            <button class="primary-button">View</button>
+            <button class="primary-button">Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
@@ -162,3 +177,16 @@
     </div>
   </body>
 </html>
+
+<script>
+  const viewButton = document.getElementById("view");
+  const cartButton = document.getElementById("add");
+
+  viewButton.addEventListener("click", () => {
+    window.location = "/dogpage1.html";
+  });
+
+  cartButton.addEventListener("click", () => {
+    window.location = "/shoppingcart1.html";
+  });
+</script>
