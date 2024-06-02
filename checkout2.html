@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShopDirect</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/pages/home.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="page-logo">
+      <img src="./assets/images/logo.png" alt="logo" />
+    </div>
+    <!-- shopping cart -->
+    <div class="cart">
+      <img src="./assets/images/cart.png" alt="cart" />
+      <!-- menu -->
+      <div class="menu-container">
+        <div class="menu">
+          <div class="menu-list">
+            <a>dog</a>
+            <a>cat</a>
+            <a>fish</a>
+            <a>reptiles</a>
+            <a>help</a>
+          </div>
+          <div class="searchbar">
+            <input type="text" />
+            <button>search</button>
+          </div>
+        </div>
+      </div>
+      <!-- bread crumb menu -->
+      <div class="breadcrumb">
+        <a href="/checkout1.html"></a>
+        <a>Payment Method</a>
+        <a>Confirm Payment</a>
+      </div>
+    </div>
+    <!-- Checkout Payment method -->
+    <div class="payment-method">
+      <h1 class="bold">Payment Method</h1>
+      <form action="/submit-form" method="post">
+        <label for="Email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="credit-card">Credit Card:</label><br />
+        <input type="integer" id="name" name="name" /><br />
+
+        <label for="name-on-card">Name on Card:</label><br />
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="card-number">Card Number:</label><br />
+        <input type="integer" id="number" name="number" /><br />
+
+        <label for="Date">MM/YY:</label><br />
+        <input type="text" id="number" name="number" /><br />
+
+        <label for="cvc">CVC:</label><br />
+        <input type="text" id="number" name="number" /><br />
+
+        <div class="other-payment-method">
+          <div class="apple-pay">
+            <img src="./assets/images/apple pay.png" alt="apple-pay" />
+          </div>
+          <div class="pay-pal">
+            <img src="./assets/images/Paypal_logo.png" alt="pay-pay" />
+          </div>
+          <div class="google-pay">
+            <img src="./assets/images/Google_Pay-Logo.png" alt="google-pay" />
+          </div>
+
+          <button class="primary-button">Continue to Payment Method</button>
+        </div>
+      </form>
+      <p>back to details</p>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="logo-section">
+          <img class="logo" src="./assets/images/logo.png" />
+          <div class="social-icons">
+            <img src="./assets/images/instagram logo.png" />
+            <img src="./assets/images/twitter.png" />
+            <img src="./assets/images/facebook.png" />
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="menu-section">
+            <p class="menu-title">Our Company</p>
+            <a> About Us </a>
+            <a> FAQ </a>
+            <a> Career </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Product</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
+          </div>
+          <div class="menu-section">
+            <p class="menu-title">Our Policies</p>
+            <a> Refund Policies </a>
+            <a> Terms and Conditions </a>
+            <a> Customer Support </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>@ 2024, PetShopDirect. All rights reserved</p>
+        <div>
+          <img src="assets/images/American-Express-logo 1.png" alt="amex" />
+          <img src="assets/images/apple pay.png" alt="amex" />
+          <img src="assets/images/MasterCard_Logo.png" alt="amex" />
+          <img src="assets/images/Paypal_logo.png" alt="amex" />
+          <img src="assets/images/Google_Pay-Logo.png" alt="amex" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

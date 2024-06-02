@@ -1,0 +1,86 @@
+.page-logo {
+  margin-top: 200px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+}
+
+.menu-container {
+  background-color: #c9d8d5;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 10px 30px;
+}
+.menu-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.searchbar {
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+}
+.searchbar input {
+  border: none;
+  background-color: transparent;
+}
+
+.searchbar button {
+  background-color: transparent;
+  border: none;
+  font-family: "Lexend Giga", sans-serif;
+  text-transform: capitalize;
+}
+
+.dog-items {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.dog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin-top: 20px;
+}
+
+.dog-item img {
+  width: 250px;
+  height: 250px;
+}
+
+.dog-item p {
+  font-family: "Lexend Giga", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-top: 5px;
+  align-content: center;
+  text-align: center;
+}
+
+.dog-item button {
+  border: none;
+  background-color: #b6dfe5;
+  padding: 5px 5px;
+  font-size: 10px;
+  border-radius: 30px;
+  color: white;
+  font-family: "Lexend", sans-serif;
+  text-transform: capitalize;
+}
