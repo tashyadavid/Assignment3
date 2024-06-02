@@ -43,10 +43,3 @@
   margin: 15px;
   width: 50px;
 }
-
-.personal details {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 30px;
-}
