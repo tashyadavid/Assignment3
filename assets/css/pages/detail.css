@@ -56,3 +56,23 @@
   font-size: 22px;
   font-weight: normal;
 }
+
+@media (max-width: 390px) {
+  .detail-item .detail-img img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detail-item .detail-img img {
+    width: 300px;
+    margin: auto;
+  }
+  .detail-item .details {
+    width: 100%;
+  }
+
+  .size-options {
+    width: 90%;
+    margin: auto;
+  }
+}

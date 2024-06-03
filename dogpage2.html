@@ -191,6 +191,11 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.querySelector(".hamburger-menu");
+    menu.addEventListener("click", function () {
+      document.querySelector(".menu-container").classList.toggle("active");
+    });
+
     const details = document.getElementById("details");
     const items = details.getElementsByClassName("item");
 
@@ -209,6 +214,11 @@
         }
       });
     }
+
+    var menu = document.querySelector(".hamburger-menu");
+    menu.addEventListener("click", function () {
+      document.querySelector(".menu-container").classList.toggle("active");
+    });
   });
   var addButton2 = document.getElementById("add2");
 

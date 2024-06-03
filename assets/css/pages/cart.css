@@ -45,3 +45,25 @@
   border-radius: 0px;
   margin-top: 10px;
 }
+
+@media (max-width: 390px) {
+  .shopping-cart .item {
+    justify-content: center;
+  }
+  .shopping-cart .item img {
+    max-width: 300px;
+  }
+  .shopping-cart .subtotal {
+    min-width: 90%;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .shopping-cart .subtotal h1 {
+    font-size: 18px;
+  }
+  .shopping-cart .subtotal button {
+    font-size: 18px;
+  }
+}

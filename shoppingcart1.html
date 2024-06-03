@@ -37,15 +37,22 @@
           <img src="./assets/images/add product.png" />
         </div>
       </div>
+      <div class="flex item">
+        <img src="./assets/images/dog product 2.png" alt="dog" />
+        <div class="details flex">
+          <p>Black Hawk Lamb and Rice</p>
+          <p>$24.99</p>
+          <img src="./assets/images/add product.png" />
+        </div>
+      </div>
       <div class="subtotal">
         <div class="flex">
           <h1>Subtotal</h1>
           <p>$24.99</p>
         </div>
         <div class="flex btn-container">
-            <button class="cart-button" id="continue">Continue Shopping</button>
-            <button class="primary-button" id="checkout">Checkout</button>
-          </div>
+          <button class="cart-button" id="continue">Continue Shopping</button>
+          <button class="primary-button" id="checkout">Checkout</button>
         </div>
       </div>
     </div>
@@ -96,6 +103,13 @@
 </html>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.querySelector(".hamburger-menu");
+    menu.addEventListener("click", function () {
+      document.querySelector(".menu-container").classList.toggle("active");
+    });
+  });
+
   const viewButton = document.getElementById("continue");
   const checkoutButton = document.getElementById("checkout");
 
@@ -106,5 +120,4 @@
   checkoutButton.addEventListener("click", () => {
     window.location = "checkout1.html";
   });
-
 </script>
