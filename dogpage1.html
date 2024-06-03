@@ -36,7 +36,7 @@
     <div class="menu-container">
         <div class="menu">
           <div class="menu-list">
-            <a href="/productpage.html">dog</a>
+            <a href="productpage.html">dog</a>
             <a>cat</a>
             <a>fish</a>
             <a>reptiles</a>
@@ -209,12 +209,6 @@
       });
     }
 
-    var addButton2 = document.getElementById("add2");
-
-    addButton2.addEventListener("click", function () {
-      window.location.href = "shoppingcart1.html";
-    });
-
     var menu = document.querySelector(".hamburger-menu");
     menu.addEventListener("click", function () {
       document.querySelector(".menu-container").classList.toggle("active");
@@ -225,11 +219,13 @@
     window.location.href = "productpage.html";
   });
 
-  var shoppingCartLink = document.getElementById("shoppingCartLink");
+  document.addEventListener("DOMContentLoaded", function () {
+    // Other JavaScript code...
+    
+    var addButton2 = document.getElementById("add2");
 
-  shoppingCartLink.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    window.location.href = "shoppingcart2.html";
+  addButton2.addEventListener("click", function () {
+    window.location.href = "shoppingcart1.html";
   });
-</script>
+    
+  
