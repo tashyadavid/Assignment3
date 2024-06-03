@@ -137,9 +137,10 @@
           </div>
           <div class="review-stars">
             <img src="./assets/images/review stars 1.png" alt="review" />
-          </div>
-          <button class="primary-button" id="add2">Add to Cart</button>
-        </div>
+            <div class="action-buttons">
+                <button class="primary-button" id="add2">Add to Cart</button>
+              </div>
+            </div>
       </div>
       <a href="productpage.html" class="continue-link">Continue Shopping</a>
     </div>
@@ -190,6 +191,14 @@
 </html>
 
 <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    var addButton2 = document.getElementById("add2");
+    addButton2.addEventListener("click", function () {
+      window.location.href = "shoppingcart1.html"; 
+    });
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     var menu = document.querySelector(".hamburger-menu");
     menu.addEventListener("click", function () {
@@ -228,11 +237,5 @@
   dogLink.addEventListener("click", function () {
     window.location.href = "productpage.html";
   });
-  var shoppingCartLink = document.getElementById("shoppingCartLink");
-
-  shoppingCartLink.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    window.location.href = "shoppingcart2.html";
-  });
+  
 </script>
