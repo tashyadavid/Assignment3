@@ -53,3 +53,28 @@
 .menu-section .menu-title {
   text-decoration: underline;
 }
+
+@media (max-width: 390px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer-menu {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer-bottom img {
+    width: 40px;
+  }
+
+  .logo-section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}

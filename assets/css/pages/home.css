@@ -5,39 +5,6 @@
   background-position: center;
   background-size: cover;
 }
-.menu-container {
-  background-color: #c9d8d5;
-}
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  padding: 10px 30px;
-}
-.menu-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.searchbar {
-  background-color: #f5f5f5;
-  padding: 5px;
-  border-radius: 20px;
-  display: flex;
-  gap: 5px;
-}
-.searchbar input {
-  border: none;
-  background-color: transparent;
-}
-
-.searchbar button {
-  background-color: transparent;
-  border: none;
-  font-family: "Lexend Giga", sans-serif;
-  text-transform: capitalize;
-}
 
 .categories {
   margin: auto;
@@ -135,58 +102,36 @@
   background-size: cover;
 }
 
-.footer {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-image: url("../../images/footer\ image.png");
-  background-position: center;
-  background-size: cover;
-  height: 40vh;
-  justify-content: space-between;
-  font-family: "Playfair Display SC", serif;
-  padding: 40px;
-}
+@media (max-width: 390px) {
+  .banner {
+    background-image: url("../../images/footer\ image.png");
+  }
+  .spotlight-container {
+    flex-direction: column-reverse;
+  }
+  .spotlight-container p {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    max-width: 340px;
+  }
+  .spotlight-container img {
+    width: 100%;
+    height: 400px;
+  }
 
-.footer .footer-top,
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
+  .category p {
+    font-size: 18px;
+  }
 
-.footer .footer-top .logo-section .logo {
-  width: 215px;
-}
+  .bundles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bundles button {
+    margin-top: 0px;
+  }
 
-.social-icons img {
-  width: 30px;
-  margin-right: 15px;
-  margin-top: 10px;
-}
-
-.footer-menu {
-  display: flex;
-  gap: 30px;
-}
-
-.menu-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.menu-section a,
-.menu-title {
-  font-family: "Playfair Display SC", serif;
-}
-
-.footer-bottom p {
-  font-size: 16px;
-}
-
-.menu-section .menu-title {
-  text-decoration: underline;
+  .featured {
+    height: 50vh;
+  }
 }

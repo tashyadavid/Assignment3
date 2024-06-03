@@ -1,6 +1,6 @@
 .page-logo {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 200px;
+  margin-bottom: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@
 
 .menu-container {
   background-color: #c9d8d5;
+  position: relative;
 }
 
 .menu {
@@ -27,6 +28,8 @@
   justify-content: space-between;
   max-width: 1200px;
   padding: 10px 30px;
+  width: 100%;
+  margin: auto;
 }
 
 .menu-list {
@@ -53,4 +56,55 @@
   border: none;
   font-family: "Lexend Giga", sans-serif;
   text-transform: capitalize;
+}
+
+/* hiding menu in desktop mode */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  .menu {
+    width: fit-content;
+    z-index: 99;
+  }
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-container.active .menu-list {
+    display: flex;
+  }
+
+  .menu-container.active .menu-list a {
+    padding-left: 20px;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: end;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-logo img {
+    width: 200px;
+  }
 }
