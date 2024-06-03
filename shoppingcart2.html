@@ -103,6 +103,13 @@
 </html>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.querySelector(".hamburger-menu");
+    menu.addEventListener("click", function () {
+      document.querySelector(".menu-container").classList.toggle("active");
+    });
+  });
+
   const viewButton = document.getElementById("continue");
   const checkoutButton = document.getElementById("checkout");
 

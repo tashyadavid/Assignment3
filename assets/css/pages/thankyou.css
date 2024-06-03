@@ -18,3 +18,13 @@
 .thank-you-elements p {
   font-size: 22px;
 }
+
+@media (max-width: 390px) {
+  .thank-you-elements {
+    margin: 20px;
+  }
+  .thank-you-elements p,
+  .thank-you-elements h2 {
+    text-align: center;
+  }
+}
