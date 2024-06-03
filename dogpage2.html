@@ -43,9 +43,9 @@
           <a>help</a>
         </div>
         <div class="searchbar">
-          <input type="text" />
-          <button>search</button>
-        </div>
+            <input type="text" />
+            <button id="search">search</button>
+          </div>
       </div>
       <div class="hamburger-menu">
         <svg
@@ -237,5 +237,12 @@ document.addEventListener("DOMContentLoaded", function () {
   dogLink.addEventListener("click", function () {
     window.location.href = "productpage.html";
   });
+  var search = document.getElementById("search");
+
+    search.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      window.location.href = "searchpage.html";
+    });
   
 </script>
