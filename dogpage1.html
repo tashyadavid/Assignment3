@@ -21,27 +21,33 @@
   </head>
   <body>
     <!-- Logo -->
-    <div class="page-logo">
-      <img src="./assets/images/logo.png" alt="logo" />
-    </div>
+    <a href="index.html">
+      <div class="page-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+    </a>
     <!-- shopping cart -->
-    <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart" />
-    </div>
+    <a id="shoppingCartLink" href="shoppingcart1.html">
+      <div class="cart">
+        <img src="./assets/images/cart.png" alt="cart" />
+      </div>
+    </a>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a>dog</a>
+          <a id="dogLink">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
           <a>help</a>
         </div>
-        <div class="searchbar">
-          <input type="text" />
-          <button>search</button>
-        </div>
+        <a href="searchpage.html">
+          <div class="searchbar">
+            <input type="text" />
+            <button>search</button>
+          </div>
+        </a>
       </div>
     </div>
     <div class="item-container">
@@ -85,16 +91,16 @@
         </div>
         <div class="size-options">
           <p class="description">Select a size</p>
-          <button class="primary-button">3kg</button>
-          <button class="primary-button">6kg</button>
+          <button class="secondary-button">3kg</button>
+          <button class="secondary-button">6kg</button>
           <p class="bold price">$24.99</p>
           <div class="details" id="details">
             <div class="item">
               <p class="title">Details</p>
               <p class="description">
-                Black Hawk Lamb and Rice dog food offers a nutritious blend of
-                lamb meat and rice, providing dogs with essential protein and
-                carbohydrates for energy and muscle health. Made with
+                Black Hawk Chicken and Rice dog food offers a nutritious blend
+                of chicken meat and rice, providing dogs with essential protein
+                and carbohydrates for energy and muscle health. Made with
                 high-quality ingredients and free from artificial additives, it
                 supports overall well-being and is suitable for dogs of all life
                 stages. Pet owners appreciate its balanced nutrition and
@@ -104,10 +110,10 @@
             <div class="item">
               <p class="title">Reviews</p>
               <p class="description">
-                Pet owners rave about Black Hawk Lamb and Rice dog food,
+                Pet owners rave about Black Hawk chicken and Rice dog food,
                 praising its high-quality ingredients and the noticeable
                 improvements in their dogs' health and vitality. Many highlight
-                the digestibility of the lamb and rice formula, with fewer
+                the digestibility of the chicken and rice formula, with fewer
                 digestive issues reported. Dogs love the taste, and owners
                 appreciate the brand's commitment to natural ingredients and
                 balanced nutrition. Overall, it's a top choice for discerning
@@ -118,10 +124,10 @@
           <div class="review-stars">
             <img src="./assets/images/review stars 1.png" alt="review" />
           </div>
-          <button class="primary-button">Add to Cart</button>
+          <button class="primary-button" id="add2">Add to Cart</button>
         </div>
       </div>
-      <p class="continue">continue shopping</p>
+      <a href="productpage.html" class="continue-link">Continue Shopping</a>
     </div>
     <!-- footer -->
     <div class="footer">
@@ -170,14 +176,42 @@
 </html>
 
 <script>
-  const viewButton = document.getElementById("view");
-  const cartButton = document.getElementById("add");
+  document.addEventListener("DOMContentLoaded", function () {
+    const details = document.getElementById("details");
+    const items = details.getElementsByClassName("item");
 
-  viewButton.addEventListener("click", () => {
-    window.location = "dogpage1.html";
+    for (let i = 0; i < items.length; i++) {
+      const title = items[i].getElementsByClassName("title")[0];
+      const description = items[i].getElementsByClassName("description")[0];
+
+      title.addEventListener("click", function () {
+        if (
+          description.style.display === "none" ||
+          description.style.display === ""
+        ) {
+          description.style.display = "block";
+        } else {
+          description.style.display = "none";
+        }
+      });
+    }
+
+    var addButton2 = document.getElementById("add2");
+
+    addButton2.addEventListener("click", function () {
+      window.location.href = "shoppingcart1.html";
+    });
   });
 
-  cartButton.addEventListener("click", () => {
-    window.location = "shoppingcart1.html";
+  dogLink.addEventListener("click", function () {
+    window.location.href = "productpage.html";
+  });
+
+  var shoppingCartLink = document.getElementById("shoppingCartLink");
+
+  shoppingCartLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    window.location.href = "shoppingcart2.html";
   });
 </script>

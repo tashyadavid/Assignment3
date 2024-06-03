@@ -3,6 +3,8 @@
   flex-direction: column;
   margin: 150px;
   gap: 20px;
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
 
 .thank-you-elements img {

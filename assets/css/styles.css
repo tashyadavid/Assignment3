@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -150,6 +151,23 @@ button:hover {
   transform: scale(0.97);
 }
 
+.secondary-button {
+  border: none;
+  background-color: #3e5444;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 32px;
+  font-family: "Lexend", sans-serif;
+  cursor: pointer;
+}
+
+.secondary-button:focus {
+  background-color: #f0f0f0;
+  border-color: #999;
+  transition: 1s;
+}
+
 .cart-button {
   border: none;
   background-color: 99A49C4;
@@ -163,4 +181,20 @@ button:hover {
 .flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.continue-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: grey;
+  text-decoration: none;
+}
+
+.checkout.link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: grey;
+  text-decoration: none;
 }

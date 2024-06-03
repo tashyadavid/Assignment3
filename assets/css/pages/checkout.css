@@ -1,3 +1,67 @@
+.page-logo {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  background-color: #c9d8d5;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 10px 30px;
+}
+
+.menu-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.searchbar {
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.searchbar input {
+  border: none;
+  background-color: transparent;
+}
+
+.searchbar button {
+  background-color: transparent;
+  border: none;
+  font-family: "Lexend Giga", sans-serif;
+  text-transform: capitalize;
+}
+
+.cart {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cart img {
+  margin: 15px;
+  width: 50px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .personal-details {
   flex-direction: column;
   gap: 10px;
@@ -7,17 +71,38 @@
 
 .personal-details input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
 .personal-details h1 {
   font-size: 27px;
-  margin-top: 30px;
 }
+
+.personal-details .pay {
+  gap: 10px;
+  margin: 20px 0px;
+}
+
 .personal-details button {
-  border-radius: 0px;
+  border-radius: 30px;
   font-size: 24px;
   margin-bottom: 40px;
-  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.breadcrumb2 a {
+  color: gray;
+}
+
+.h1 {
+  text-transform: uppercase;
+}
+
+.payment-method {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

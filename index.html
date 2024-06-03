@@ -24,16 +24,18 @@
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a href="productpage.html">dog</a>
+          <a id="dogLink">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
           <a>help</a>
         </div>
-        <div class="searchbar">
-          <input type="text" />
-          <button>search</button>
-        </div>
+        <a href="searchpage.html">
+          <div class="searchbar">
+            <input type="text" />
+            <button>search</button>
+          </div>
+        </a>
       </div>
     </div>
     <!-- categories -->
@@ -160,10 +162,28 @@
 </html>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dogButton = document.getElementById("dog");
-    dogButton.addEventListener("click", () => {
-      window.location = "productpage.html";
+    document.addEventListener("DOMContentLoaded", function () {
+      const dogButton = document.getElementById("dog");
+      dogButton.addEventListener("click", () => {
+        window.location = "productpage.html";
+      });
     });
-  });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const dogLink = document.getElementById("dogLink");
+
+      dogLink.addEventListener("click", function () {
+        window.location.href = "productpage.html";
+      });
+
+      var shoppingCartLink = document.getElementById("shoppingCartLink");
+
+
+  shoppingCartLink.addEventListener("click", function(event) {
+
+    event.preventDefault();
+
+
+    window.location.href = "shoppingcart2.html";
+    });
 </script>

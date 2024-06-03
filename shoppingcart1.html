@@ -21,9 +21,11 @@
   </head>
   <body>
     <!-- Logo -->
-    <div class="page-logo">
-      <img src="./assets/images/logo.png" alt="logo" />
-    </div>
+    <a href="index.html">
+      <div class="page-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+    </a>
     <!-- shopping cart products -->
     <div class="item-container shopping-cart">
       <h1>Shopping Cart</h1>
@@ -41,8 +43,9 @@
           <p>$24.99</p>
         </div>
         <div class="flex btn-container">
-          <button class="cart-button" id="continue">Continue Shopping</button>
-          <button class="primary-button" id="checkout">Checkout</button>
+            <button class="cart-button" id="continue">Continue Shopping</button>
+            <button class="primary-button" id="checkout">Checkout</button>
+          </div>
         </div>
       </div>
     </div>
@@ -103,4 +106,5 @@
   checkoutButton.addEventListener("click", () => {
     window.location = "checkout1.html";
   });
+
 </script>

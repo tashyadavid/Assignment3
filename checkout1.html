@@ -21,54 +21,84 @@
   </head>
   <body>
     <!-- Logo -->
-    <div class="page-logo">
-      <img src="./assets/images/logo.png" alt="logo" />
-    </div>
+    <a href="index.html">
+      <div class="page-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+    </a>
     <!-- shopping cart -->
-    <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart" />
-    </div>
+    <a id="shoppingCartLink" href="shoppingcart1.html">
+      <div class="cart">
+        <img src="./assets/images/cart.png" alt="cart" />
+      </div>
+    </a>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a>dog</a>
+          <a id="dogLink">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
           <a>help</a>
         </div>
-        <div class="searchbar">
-          <input type="text" />
-          <button>search</button>
-        </div>
+        <a href="searchpage.html">
+          <div class="searchbar">
+            <input type="text" />
+            <button>search</button>
+          </div>
+        </a>
       </div>
     </div>
     <div class="item-container">
-      <!-- bread crumb menu -->
-      <div class="breadcrumb">
-        <a>Personal Details</a>
-        <a>Payment Method</a>
-        <a>Confirm Payment</a>
-      </div>
-      <!-- Checkout Personal details -->
+      <!-- Checkout Payment method -->
       <div class="personal-details flex">
-        <h1 class="bold">Enter your Details</h1>
-        <form action="checkout2.html" method="get">
+        <h4 style="margin-top: 70px; margin-bottom: 30px">
+          Enter your details
+        </h4>
+        <form action="/thankyoupage.html" method="get">
+          <label for="First Name">First Name:</label><br />
+          <input type="text" id="first-name" name="first-name" /><br />
+
+          <label for="Last Name">Last Name:</label><br />
+          <input type="text" id="last-name" name="last-name" /><br />
+
           <label for="Email">Email:</label><br />
           <input type="email" id="email" name="email" /><br />
 
-          <label for="phone-number">Phone Number:</label><br />
+          <label for="Phone Number">Phone Number:</label><br />
+          <input type="integer" id="phone-number" name="phone-number" /><br />
+
+          <h4 style="margin-top: 30px; margin-bottom: 40px">Payment Method</h4>
+
+          <label for="credit-card">Credit Card:</label><br />
+          <input type="integer" id="name" name="name" /><br />
+
+          <label for="name-on-card">Name on Card:</label><br />
+          <input type="text" id="name" name="name" /><br />
+
+          <label for="card-number">Card Number:</label><br />
+          <input type="integer" id="number" name="number" /><br />
+
+          <label for="Date">MM/YY:</label><br />
           <input type="text" id="number" name="number" /><br />
-          <label for="first-name">First Name:</label><br />
-          <input type="text" id="name" name="name" /><br />
 
-          <label for="last-name">Last Name:</label><br />
-          <input type="text" id="name" name="name" /><br />
-
-          <button class="primary-button">Continue to Payment Method</button>
+          <label for="cvc">CVC:</label><br />
+          <input type="text" id="number" name="number" /><br />
+          <div class="flex pay">
+            <div class="apple-pay">
+              <img src="./assets/images/apple pay.png" alt="apple-pay" />
+            </div>
+            <div class="pay-pal">
+              <img src="./assets/images/Paypal_logo.png" alt="pay-pay" />
+            </div>
+            <div class="google-pay">
+              <img src="./assets/images/Google_Pay-Logo.png" alt="google-pay" />
+            </div>
+          </div>
+          <button class="primary-button">Confirm Payment</button>
         </form>
-        <a href="/" class="continue">back to home</a>
+        <a href="productpage.html" class="continue-link">back to home</a>
       </div>
     </div>
 
@@ -108,7 +138,7 @@
         <p>@ 2024, PetShopDirect. All rights reserved</p>
         <div>
           <img src="assets/images/American-Express-logo 1.png" alt="amex" />
-          <img src="assets/images/apple pay.png" alt="applepay" />
+          <img src="assets/images/apple pay.png" alt="paypal" />
           <img src="assets/images/MasterCard_Logo.png" alt="mastercard" />
           <img src="assets/images/Paypal_logo.png" alt="paypal" />
           <img src="assets/images/Google_Pay-Logo.png" alt="googlepay" />
@@ -117,3 +147,16 @@
     </div>
   </body>
 </html>
+
+<script>
+  dogLink.addEventListener("click", function () {
+    window.location.href = "productpage.html";
+  });
+  var shoppingCartLink = document.getElementById("shoppingCartLink");
+
+  shoppingCartLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    window.location.href = "shoppingcart2.html";
+  });
+</script>

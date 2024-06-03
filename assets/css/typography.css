@@ -15,6 +15,13 @@ h3 {
   font-family: "Lexend Giga", sans-serif;
 }
 
+h4 {
+  font-size: 30px;
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3e5444;
+}
 /* body */
 p {
   font-size: 26px;
@@ -27,7 +34,26 @@ a {
   margin: 0px 10px;
 }
 
-/* Helper */
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.continue-link {
+  font-size: 24px;
+  font-family: "Lexend", sans-serif;
+}
+
+.checkout.link {
+  font-size: 24px;
+  font-family: "Lexend", sans-serif;
+}
+
+.personal-details {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
 }

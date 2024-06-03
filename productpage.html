@@ -20,26 +20,32 @@
   </head>
   <body>
     <!-- Logo -->
-    <div class="page-logo">
-      <img src="./assets/images/logo.png" alt="logo" />
-    </div>
-    <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart" />
-    </div>
+    <a href="index.html">
+      <div class="page-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+    </a>
+    <!-- shopping cart -->
+    <a id="shoppingCartLink" href="shoppingcart1.html">
+      <div class="cart">
+        <img src="./assets/images/cart.png" alt="cart" />
+      </div>
+    </a>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a>dog</a>
+          <a id="dogLink">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
           <a>help</a>
         </div>
-        <div class="searchbar">
-          <input type="text" />
-          <button>search</button>
-        </div>
+          <div class="searchbar">
+            <input type="text" />
+            <button>search</button>
+          </div>
+        </a>
       </div>
     </div>
     <!-- main container -->
@@ -51,7 +57,7 @@
         <a href="index.html">Home</a>
         <svg
           width="10"
-          height=""
+          height="10"
           viewBox="0 0 27 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +78,8 @@
           <p>Black Hawk Chicken and Rice</p>
           <p>$24.99</p>
           <div class="button-container">
-            <button class="primary-button" id="view">View</button>
-            <button class="primary-button" id="add">Add to Cart</button>
+            <button class="primary-button" id="view1">View</button>
+            <button class="primary-button" id="add1">Add to Cart</button>
           </div>
         </div>
         <div class="dog-item">
@@ -81,8 +87,8 @@
           <p>Black Lamb Chicken and Rice</p>
           <p>$24.99</p>
           <div class="button-container">
-            <button class="primary-button">View</button>
-            <button class="primary-button">Add to Cart</button>
+            <button class="primary-button" id="view2">View</button>
+            <button class="primary-button" id="add2">Add to Cart</button>
           </div>
         </div>
         <div class="dog-item">
@@ -90,8 +96,8 @@
           <p>Dog House</p>
           <p>$24.99</p>
           <div class="button-container">
-            <button class="primary-button">View</button>
-            <button class="primary-button">Add to Cart</button>
+            <button class="primary-button" id="view2">View</button>
+            <button class="primary-button" id="add2">Add to Cart</button>
           </div>
         </div>
         <div class="dog-item">
@@ -170,14 +176,33 @@
 </html>
 
 <script>
-  const viewButton = document.getElementById("view");
-  const cartButton = document.getElementById("add");
+  var viewButton1 = document.getElementById("view1");
+  var addButton1 = document.getElementById("add1");
 
-  viewButton.addEventListener("click", () => {
-    window.location = "dogpage1.html";
+  viewButton1.addEventListener("click", function () {
+    window.location.href = "dogpage1.html";
   });
 
-  cartButton.addEventListener("click", () => {
-    window.location = "shoppingcart1.html";
+  addButton1.addEventListener("click", function () {
+    window.location.href = "shoppingcart1.html";
   });
+
+  var viewButton2 = document.getElementById("view2");
+  var addButton2 = document.getElementById("add2");
+
+  viewButton2.addEventListener("click", function () {
+    window.location.href = "dogpage2.html";
+  });
+
+  addButton2.addEventListener("click", function () {
+    window.location.href = "shoppingcart2.html";
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+  const dogLink = document.getElementById("dogLink");
+
+  dogLink.addEventListener("click", function () {
+    window.location.href = "productpage.html"; // Change this to the desired page
+  });
+});
+
 </script>

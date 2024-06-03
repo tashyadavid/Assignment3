@@ -20,18 +20,22 @@
   </head>
   <body>
     <!-- Logo -->
-    <div class="page-logo">
-      <img src="./assets/images/logo.png" alt="logo" />
-    </div>
+    <a href="index.html">
+      <div class="page-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </div>
+    </a>
     <!-- shopping cart -->
-    <div class="cart">
-      <img src="./assets/images/cart.png" alt="cart" />
-    </div>
+    <a id="shoppingCartLink" href="shoppingcart1.html">
+      <div class="cart">
+        <img src="./assets/images/cart.png" alt="cart" />
+      </div>
+    </a>
     <!-- menu -->
     <div class="menu-container">
       <div class="menu">
         <div class="menu-list">
-          <a>dog</a>
+          <a id="dogLink">dog</a>
           <a>cat</a>
           <a>fish</a>
           <a>reptiles</a>
@@ -50,7 +54,7 @@
       </div>
       <h2 class="bold">Thank you for your purchase</h2>
       <p>You will recieve an email confirmation soon</p>
-      <a href="index.html" class="continue">back to home</a>
+      <a href="productpage.html" class="continue-link">back to home</a>
     </div>
     <!-- footer -->
     <div class="footer">
@@ -97,3 +101,9 @@
     </div>
   </body>
 </html>
+
+<script>
+  dogLink.addEventListener("click", function () {
+    window.location.href = "productpage.html"; // Change this to the desired page
+  });
+</script>

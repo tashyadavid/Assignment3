@@ -72,16 +72,18 @@
   margin: auto;
   margin-top: 40px;
   flex-wrap: wrap;
-  display: grid;
+  display: flex;
   grid-template-columns: auto auto auto;
+  justify-content: space-between;
 }
 
 .dog-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 48%;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .dog-item img {
